@@ -1,5 +1,12 @@
 function generatePassword(){
   //TODO: your code goes here
+  const array = new Uint32Array(10);
+  let password="";
+  crypto.getRandomValues(array);
+  for (let i = 0; i < array.length; i++) {
+    password += array[i] + " ";
+    return password;
+  }
 }
 
 
