@@ -18,9 +18,8 @@ function generatePassword() {
     // repeat the same question while  the length of password is not a number or
   // its less than 8 ot bigger than 128 
   while (isNaN(passlength) || passlength < 8 || passlength > 128) {
-    console.log("booo")
     passlength = 0;
-    passlength = prompt("Please select the length of your password");
+    passlength = prompt("Please choose a length of at least 8 characters and no more than 128 characters");
   }
 
   // repeat the questions while all the answers are No
@@ -30,7 +29,9 @@ function generatePassword() {
     lowCase = confirm("Do you want your password include lowercase letter?")
     specChar = confirm("Do you want your password include special Charector?")
     incNum = confirm("Do you want your password include Numbers?")
-
+if(!lowCase && !upCase && !specChar && !incNum){
+  alert("You need atleast choose one category")
+}
     //if user select Upper Case option, call includeUpCase function
     if (upCase) {
       str = includeUpCase(str);
