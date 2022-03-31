@@ -57,7 +57,6 @@ The following image shows the web application's appearance and functionality:
    ![The Password Generator application displays a red button to "Generate Password".](./Assets/password-generator.png)
   
 
-*  GitHub repository name: 
+*  GitHub repository name: Password-Generator-March-31
 *  The URL to the website is: https://saghar-b.github.io/Password-Generator-March-31/
-*  The git hub URL is: 
 *  The URL of the GitHub repository : https://github.com/saghar-b/Password-Generator-March-31
