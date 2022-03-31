@@ -117,6 +117,24 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+.modal{
+position: absolute;
+top: 200px;
+left: 40% ;
+/* height: 100%; */
+/* width: 100%; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal-contant{
+  background-color: aqua;
+  padding: 2rem 4rem;
+}
+.hidden {
+  /* display: none; */
+}
+
 
 @media (max-width: 690px) {
   .btn {
