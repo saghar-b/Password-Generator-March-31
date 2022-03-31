@@ -22,6 +22,7 @@ function generatePassword() {
     passlength = prompt("Please choose a length of at least 8 characters and no more than 128 characters");
     // if user want to cancel
     if(passlength==null){
+      console.log(passlength)
       return "";
     }
   }
