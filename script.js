@@ -11,7 +11,11 @@ function generatePassword() {
 
   // get the length of password from user
   passlength = prompt("Please select the length of your password");
-  // repeat the same question while  the length of password is not a number or
+// if the user press cancel button to the length of password question
+  if(passlength==null){
+    return "";
+  }
+    // repeat the same question while  the length of password is not a number or
   // its less than 8 ot bigger than 128 
   while (isNaN(passlength) || passlength < 8 || passlength > 128) {
     console.log("booo")
