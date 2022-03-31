@@ -20,6 +20,9 @@ function generatePassword() {
   while (isNaN(passlength) || passlength < 8 || passlength > 128) {
     passlength = 0;
     passlength = prompt("Please choose a length of at least 8 characters and no more than 128 characters");
+    if(passlength==null){
+      return "";
+    }
   }
 
   // repeat the questions while all the answers are No
